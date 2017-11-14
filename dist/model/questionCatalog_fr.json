@@ -1,0 +1,52 @@
+{
+	"Catalog" : [ {
+		"id" : "1",
+		"titel" : "1. Rahmenbedingungen (rückblickend)",
+		"besch" : "Gab es im letzten Jahr besondere Bedingungen (personelle Wechsel, Unter- oder Überkapazitäten, neue Arbeitsmittel, geänderte Ziele, Reorganisation, persönliche Aspekte, Krankheit usw.), die die Erfüllung der Aufgaben, die Zielerreichung oder die Umsetzung der Werte und des erwarteten Verhaltens beeinflusst haben:"
+	},
+	{
+		"id" : "2",
+		"titel" : "2. Aufgaben und Verantwortungen (Durchsicht des Pflichtenhefts der vergangenen Beurteilungsperiode)",
+		"besch" : "Die Aufgaben und Verantwortungen werden als Gesamtleistung auf der Basis des Pflichtenhefts beurteilt. Positive Aspekte oder Verbesserungsvorschläge werden hier aufgeführt."
+	},
+	{
+		"id" : "3",
+		"titel" : "3. Überprüfen der Ziele der vergangenen Beurteilungsperiode",
+		"besch" : "Die Zielerreichung wird als gesamthafte Leistung beurteilt. Bitte begründen Sie grosse Abweichungen in die eine oder andere Richtung."
+	},
+	{
+		"id" : "4",
+		"titel" : "4. Werte und Verhalten (Beilage B)",
+		"besch" : "Die Umsetzung der Werte und das gezeigte Verhalten werden als Teil der Gesamtleistung beurteilt. Bitte begründen Sie hier grosse Abweichungen (positive oder negative) bezüglich der Erwartungen."
+	},
+	{
+		"id" : "5",
+		"titel" : "5. Zusammenarbeit mit der/dem Vorgesetzten",
+		"besch" : "Bemerkungen der Mitarbeiterin/des Mitarbeiters zur Zusammenarbeit mit der/dem Vorgesetzten. Beurteilung der Führungskompetenzen der/des Vorgesetzten durch den/die Mitarbeitende/n:"
+	},
+	{
+		"id" : "6",
+		"titel" : "6. Entwiclungsperspektiven / Weiterbildungsmassnahmen / Förderung / organisatorische Massnahmen",
+		"besch" : "Massnahmen und Veränderungen, gewünscht (von Mitarbeiterin / Mitarbeiter oder Vorgesetzter / Vorgesetztem) oder aufgrund der Beurteilung ovrgesehen, werden schriftlich festgehalten: Weiterbildung, Änderung von Funktion oder Aufgabenbereich, organisatorische Veränderungen, Bereitstellung von Ressourcen usw."
+	},
+	{
+		"id" : "7",
+		"titel" : "7. Ziele für die nächste Beurteilungsperiode (Beilage A)",
+		"besch" : "Werden für die nächste Beurteilungsperiode individuelle Ziele vereinbart?"
+	},
+	{
+		"id" : "8",
+		"titel" : "8. Gesamtbeurteilung",
+		"besch" : "Die Gesamtbeurteilung wiederspiegelt die globale Einschätzung der Mitarbeiterin/des Mitarbeiters unter Berücksichtigung der Einschätzungen in Bezug auf das Pflichtenheft, die Umsetzung der Werte und das Verhalten sowie, falls relevant, das Erreichen der individuellen Ziele."
+	},
+	{
+		"id" : "9",
+		"titel" : "Bemerkungen zum Gespräch",
+		"besch" : ""
+	},
+	{
+		"id" : "10",
+		"titel" : "Unterschriften",
+		"besch" : "Ich bestätige mit der Unterschrift, dass das LeF stattgefunden hat"
+	} ]
+}

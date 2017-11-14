@@ -1,0 +1,42 @@
+appTitle = LeF
+appDescription=App Description
+
+#Headers
+Title = Leistungsbeurteilungs- und Förderungsgespräch LeF
+Search = Search Employee
+BaseData = Employe Base Data
+Questions = Question Catalog
+TQuestion = Question
+
+#Texts
+WelcomeText = Welcome to the Online-Evaluation
+
+#Labels
+EmployeeID = Employee ID
+Employee = Employee
+FirstName = First Name
+LastName = Last Name
+Department = Department
+Period = Beurteilungsperiode
+Date = Datum des Gesprächs
+Reason = Gesprächsanlass
+ReasonC1 = reguläres Jahresgespräch
+ReasonC2 = Erstgespräch nach Anstellung
+ReasonC3 = andere:
+Interviewing = Gesprächsführung
+Position = Funktion
+
+#Buttons
+Next = Next
+Back = Back
+
+#IconTabItems
+Q1 = Conditions
+Q2 = Tasks and responsibilities
+Q3 = Review of the objectives of the past evaluation period
+Q4 = Values and behavior
+Q5 = Cooperation with the supervisor
+Q6 = Development perspectives / training / promotion / organizational measures
+Q7 = Objectives for the next assessment period
+Q8 = Overall
+Q9 = Remarks about the conversation

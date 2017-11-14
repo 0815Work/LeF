@@ -1,0 +1,9 @@
+<mvc:View controllerName="LeF.controller.Main" 
+		  xmlns:html="http://www.w3.org/1999/xhtml" 
+		  xmlns="sap.m" 
+		  xmlns:mvc="sap.ui.core.mvc"
+		  displayBlock="true">
+	<App id="app">
+		
+	</App>
+</mvc:View>

@@ -1,0 +1,21 @@
+<mvc:View xmlns="sap.m"
+		  xmlns:form="sap.ui.layout.form"
+		  xmlns:mvc="sap.ui.core.mvc">
+	<VBox>
+		<Text text="{2/titel}" class="qTitle"/>
+		<Text text="{2/besch}" />
+		<form:SimpleForm editable="true">
+			<Text text="{i18n>Q3_1}" />
+			<RadioButtonGroup width="100%" columns="2">
+				<buttons>
+					<RadioButton groupName="qChois3" text="{i18n>ja}" />
+					<RadioButton groupName="qChois3" text="{i18n>nein}" />
+				</buttons>
+			</RadioButtonGroup>
+		</form:SimpleForm>
+		<form:SimpleForm editable="true" layout="ResponsiveGridLayout" columnsL="12" columnsM="12" labelSpanL="12" labelSpanM="12">
+			<Label text="{i18n>Q2_2}" />
+			<TextArea id="q3" growing="true" width="100%"/>	
+		</form:SimpleForm>
+	</VBox>
+</mvc:View>

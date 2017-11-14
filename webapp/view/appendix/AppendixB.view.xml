@@ -1,0 +1,12 @@
+<mvc:View controllerName="LeF.controller.appendix.Appendix"
+		  xmlns="sap.m"
+		  xmlns:mvc="sap.ui.core.mvc">
+	<Page title="({i18n>AB}) {i18n>ABTitle}"
+		  showNavButton="true"
+		  navButtonPress="onNavReturn"
+		  class="sapUiResponsiveContentPadding">
+		<VBox class="sapUiLargeMargin" >
+			<FormattedText htmlText="{/HTML}"/>
+		</VBox>	
+	</Page>
+</mvc:View>

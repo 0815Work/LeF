@@ -1,0 +1,25 @@
+<mvc:View controllerName="LeF.controller.qCatalog.Questions"
+		  xmlns="sap.m"
+		  xmlns:mvc="sap.ui.core.mvc">
+	<Toolbar>
+		<ToolbarSpacer />
+		<Button id="goToNextQuestionBtn" text="{i18n>NextPoint}" press="onNextPoint" />
+	</Toolbar>
+	<IconTabBar id="qIconTabBar"
+				class="sapUiResponsiveContentPadding"
+				binding="{/Catalog}"
+				select="onTabSelect"
+				selectedKey="{view>/selectedTabKey}" >
+		<items>
+			<IconTabFilter id="q1" text="{i18n>Q1}" key="Q1"></IconTabFilter>
+			<IconTabFilter id="q2" text="{i18n>Q2}" key="Q2"></IconTabFilter>
+			<IconTabFilter id="q3" text="{i18n>Q3}" key="Q3"></IconTabFilter>
+			<IconTabFilter id="q4" text="{i18n>Q4}" key="Q4"></IconTabFilter>
+			<IconTabFilter id="q5" text="{i18n>Q5}" key="Q5"></IconTabFilter>
+			<IconTabFilter id="q6" text="{i18n>Q6}" key="Q6"></IconTabFilter>
+			<IconTabFilter id="q7" text="{i18n>Q7}" key="Q7"></IconTabFilter>
+			<IconTabFilter id="q8" text="{i18n>Q8}" key="Q8"></IconTabFilter>
+			<IconTabFilter id="q9" text="{i18n>Q9}" key="Q9"></IconTabFilter>
+		</items>
+	</IconTabBar>
+</mvc:View>

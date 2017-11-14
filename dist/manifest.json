@@ -1,0 +1,288 @@
+{
+	"_version": "1.5.0",
+	"sap.app": {
+		"id": "LeF",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "servicecatalog.connectivityComponent",
+			"version": "0.0.0"
+		},
+		"dataSources": {
+			"ZTEST_SRV": {
+				"uri": "/sap/opu/odata/sap/ZTEST_SRV/",
+				"type": "OData",
+				"settings": {
+					"odataVersion": "2.0",
+					"localUri": "localService/ZTEST_SRV/metadata.xml"
+				}
+			}
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		},
+		"supportedThemes": [
+			"sap_hcb",
+			"sap_belize"
+		]
+	},
+	"sap.ui5": {
+		"rootView": {
+			"viewName": "LeF.view.Main",
+			"type": "XML"
+		},
+		"dependencies": {
+			"minUI5Version": "1.30.0",
+			"libs": {
+				"sap.ui.core": {},
+				"sap.m": {},
+				"sap.ui.layout": {},
+				"sap.uxap": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "LeF.i18n.i18n"
+				}
+			},
+			"ZTEST_SRV": {
+				"type": "sap.ui.model.odata.v2.ODataModel",
+				"settings": {
+					"useBatch": false,
+					"defaultOperationMode": "Server",
+					"defaultBindingMode": "TwoWay",
+					"defaultCountMode": "Request"
+				},
+				"dataSource": "ZTEST_SRV",
+				"preload": true
+			},
+			"stab": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {
+					"defaultBindingMode": "TwoWay"
+				},
+				"preload": false
+			},
+			"employee": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {
+					"defaultBindingMode": "TwoWay"
+				},
+				"preload": false
+			}
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"viewPath": "LeF.view",
+				"controlId": "app",
+				"controlAggregation": "pages",
+				"transition": "slide"
+			},
+			"routes": [
+				{
+					"name": "startPage",
+					"pattern": "",
+					"target": "start"
+				},
+				{
+					"name": "search",
+					"pattern": "search:?query:",
+					"target": "searchEmployee"
+				},
+				{
+					"name": "data",
+					"pattern": "data",
+					"target": "baseData"
+				},
+				{
+					"name": "questionContainer",
+					"pattern": "questions",
+					"target": [
+						"questions"
+					]
+				},
+				{
+					"name": "questions",
+					"pattern": "questions:?qnumber:",
+					"target": "questions"
+				},
+				{
+					"name": "appendixA",
+					"pattern": "appendixA:",
+					"target": "appendixA",
+					"targetControl": "questions",
+					"targetAggregation": "content",
+					"clearTarget": true
+				},
+				{
+					"name": "appendixB",
+					"pattern": "appendixB:",
+					"target": "appendixB",
+					"targetControl": "questions",
+					"targetAggregation": "content",
+					"clearTarget": true
+				},
+				{
+					"name": "appendixC",
+					"pattern": "appendixC:",
+					"target": "appendixC",
+					"targetControl": "questions",
+					"targetAggregation": "content",
+					"clearTarget": true
+				}
+			],
+			"targets": {
+				"start": {
+					"viewName": "Start",
+					"viewLevel": 1
+				},
+				"searchEmployee": {
+					"viewPath": "LeF.view",
+					"viewName": "SearchEmployee",
+					"viewLevel": 2
+				},
+				"baseData": {
+					"viewPath": "LeF.view",
+					"viewName": "BaseData",
+					"viewLevel": 3
+				},
+				"questionContainer": {
+					"viewPath": "LeF.view.qCatalog",
+					"viewName": "QuestionContainer",
+					"viewLevel": 4
+				},
+				"questions": {
+					"parent": "questionContainer",
+					"viewPath": "LeF.view.qCatalog",
+					"viewName": "Questions",
+					"viewId": "questionCatalog",
+					"controlId": "questionParent",
+					"controlAggregation": "content"
+				},
+				"Q1": {
+					"parent": "questions",
+					"viewPath": "LeF.view.qCatalog",
+					"viewName": "Question1",
+					"viewId": "question1",
+					"controlId": "q1",
+					"controlAggregation": "content"
+				},
+				"Q2": {
+					"parent": "questions",
+					"viewPath": "LeF.view.qCatalog",
+					"viewName": "Question2",
+					"viewId": "question2",
+					"controlId": "q2",
+					"controlAggregation": "content"
+				},
+				"Q3": {
+					"parent": "questions",
+					"viewPath": "LeF.view.qCatalog",
+					"viewName": "Question3",
+					"viewId": "question3",
+					"controlId": "q3",
+					"controlAggregation": "content"
+				},
+				"Q4": {
+					"parent": "questions",
+					"viewPath": "LeF.view.qCatalog",
+					"viewName": "Question4",
+					"viewId": "question4",
+					"controlId": "q4",
+					"controlAggregation": "content"
+				},
+				"Q5": {
+					"parent": "questions",
+					"viewPath": "LeF.view.qCatalog",
+					"viewName": "Question5",
+					"viewId": "question5",
+					"controlId": "q5",
+					"controlAggregation": "content"
+				},
+				"Q6": {
+					"parent": "questions",
+					"viewPath": "LeF.view.qCatalog",
+					"viewName": "Question6",
+					"viewId": "question6",
+					"controlId": "q6",
+					"controlAggregation": "content"
+				},
+				"Q7": {
+					"parent": "questions",
+					"viewPath": "LeF.view.qCatalog",
+					"viewName": "Question7",
+					"viewId": "question7",
+					"controlId": "q7",
+					"controlAggregation": "content"
+				},
+				"Q8": {
+					"parent": "questions",
+					"viewPath": "LeF.view.qCatalog",
+					"viewName": "Question8",
+					"viewId": "question8",
+					"controlId": "q8",
+					"controlAggregation": "content"
+				},
+				"Q9": {
+					"parent": "questions",
+					"viewPath": "LeF.view.qCatalog",
+					"viewName": "Question9",
+					"viewId": "question9",
+					"controlId": "q9",
+					"controlAggregation": "content"
+				},
+				"appendixA": {
+					"viewPath": "LeF.view.appendix",
+					"viewName": "AppendixA",
+					"viewLevel": 5,
+					"transition": "flip"
+				},
+				"appendixB": {
+					"viewPath": "LeF.view.appendix",
+					"viewName": "AppendixB",
+					"viewLevel": 5,
+					"transition": "flip"
+				},
+				"appendixC": {
+					"viewPath": "LeF.view.appendix",
+					"viewName": "AppendixC",
+					"viewLevel": 5,
+					"transition": "flip"
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		}
+	}
+}

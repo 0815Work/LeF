@@ -1,0 +1,46 @@
+<mvc:View controllerName="LeF.controller.SearchEmployee"
+		  xmlns="sap.m"
+		  xmlns:mvc="sap.ui.core.mvc">
+	<Page title="{i18n>Search}"
+		  showNavButton="true"
+		  navButtonPress="onNavBack"
+		  class="sapUiResponsivContentPadding" >
+		<content>
+			<Table id="employeeTable"
+				   items="{/employee}"
+				   itemPress="onItemPressed">
+				<headerToolbar>
+					<Toolbar>
+						<Title text="{i18n>Employees}" level="H2" />
+						<ToolbarSpacer />
+						<SearchField id="searchField" search="onSearchEmployeeTable" width="50%" />
+						<Button icon="sap-icon://sort" press="onSortButtonPressed" />
+					</Toolbar>
+				</headerToolbar>
+				<columns>
+					<Column id="employeeIDCol"><Text text="{i18n>EmployeeID}" /></Column>
+					<Column id="firstNameCol" demandPopin="true"><Text text="{i18n>FirstName}" /></Column>
+					<Column id="lastNameCol" demandPopin="true"><Text text="{i18n>LastName}" /></Column>
+					<Column id="departmentCol" demandPopin="true" minScreenWidth="Tablet"><Text text="{i18n>Department}" /></Column>
+				</columns>
+				<items>
+					<ColumnListItem type="Active">
+						<cells>
+							<Text text="{PersNr}" />
+							<Text text="{FirstName}" />
+							<Text text="{LastName}" />
+							<Text text="{BName}" />
+						</cells>
+					</ColumnListItem>
+				</items>
+			</Table>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+				<Button id="goBackToSearchBtn" text="{i18n>Back}" press="onNavBack" class="sapUiTinyMarginEnd" type="Emphasized" />
+				<Button id="goToBaseDataBtn" text="{i18n>Next}" press="onGoToBaseData" class="sapUiTinyMarginEnd" type="Emphasized" />
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

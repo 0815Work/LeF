@@ -1,0 +1,16 @@
+<mvc:View controllerName="LeF.controller.qCatalog.Question" 
+		  xmlns="sap.m"
+		  xmlns:mvc="sap.ui.core.mvc">
+	<VBox>
+		<Text text="{6/titel}" class="qTitle"/>
+		<Text text="{6/besch}" />
+		<RadioButtonGroup width="100%" columns="2">
+			<buttons>
+				<RadioButton groupName="qChois7" text="{i18n>ja}" />
+				<RadioButton groupName="qChois7" text="{i18n>nein}" />
+			</buttons>
+		</RadioButtonGroup>
+		<Text text="{i18n>Q7_1}" />
+		<Link text="{i18n>AppA}" tooltip="{i18n>AppA.tooltip}" class="sapUiTinyMarginTop" press="onGoToAppendixA" />
+	</VBox>
+</mvc:View>

@@ -1,0 +1,25 @@
+<mvc:View controllerName="LeF.controller.appendix.Appendix"
+		  xmlns="sap.m"
+		  xmlns:mvc="sap.ui.core.mvc">
+	<Page title="({i18n>AC}) {i18n>ACTitle}"
+		  showNavButton="true"
+		  navButtonPress="onNavReturn"
+		  class="sapUiResponsiveContentPadding" >
+		<VBox>
+			<Text text="{i18n>ACDesc01}" />
+			<Text text="{i18n>ACDesc02}" class="sapUiTinyMarginTop" />
+			<Label text="{i18n>ACSubTitle}" design="Bold" class="sapUiSmallMarginTop" />
+			<Text text="{i18n>ACSubDesc}" />
+			<TextArea id="improvement1" placeholder="{i18n>ACLabel} 1:" growing="true" width="100%"/>
+			<TextArea id="action1" placeholder="{i18n>ACRemark}" growing="true" width="100%"/>
+			
+			<TextArea id="improvement2" placeholder="{i18n>ACLabel} 2:" growing="true" width="100%" class="sapUiMediumMarginTop"/>
+			<TextArea id="action2" placeholder="{i18n>ACRemark}" growing="true" width="100%"/>
+			
+			<TextArea id="improvement3" placeholder="{i18n>ACLabel} 3:" growing="true" width="100%" class="sapUiMediumMarginTop"/>
+			<TextArea id="action3" placeholder="{i18n>ACRemark}" growing="true" width="100%"/>
+			
+			<Text text="{i18n>ACDesc03}" class="sapUiTinyMarginTop" />
+		</VBox>	
+	</Page>
+</mvc:View>

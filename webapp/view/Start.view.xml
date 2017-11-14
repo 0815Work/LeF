@@ -1,0 +1,42 @@
+<mvc:View controllerName="LeF.controller.Start" 
+		  xmlns="sap.m" 
+		  xmlns:mvc="sap.ui.core.mvc">
+	<Page title="{i18n>Title}">
+		<content>
+			<FlexBox alignItems="Center"
+					 direction="Column"
+					 justifyContent="Center"
+					 width="100%"
+					 class="sapUiMediumMarginTop">
+				<items>
+					<Image src="{img>/images/logo1}"
+						   densityAware="false" 
+						   width="400px">
+						<layoutData>
+							<FlexItemData growFactor="1" />
+						</layoutData>
+					</Image>
+					<Title class="sapUiMediumMarginTop sapUiMediumMarginBottom"
+						   text="{i18n>WelcomeText}" 
+						   textAlign="Center" 
+						   level="H2"
+						   titleStyle="H1"
+					       width="100%"/>
+					<Image src="{img>/images/welcomeImage}"
+						   densityAware="false" 
+						   width="400px">
+					<layoutData>
+						<FlexItemData growFactor="1" />
+					</layoutData>
+				</Image>
+				</items>
+			</FlexBox>
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button id="goToSearchBtn" text="{i18n>Next}" press="onGoToSearch" class="sapUiTinyMarginEnd" type="Emphasized"/>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

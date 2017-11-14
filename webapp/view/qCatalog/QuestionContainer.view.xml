@@ -1,0 +1,18 @@
+<mvc:View controllerName="LeF.controller.qCatalog.QuestionContainer"
+		  xmlns="sap.m"
+		  xmlns:mvc="sap.ui.core.mvc">
+	<Page id="questionParent" title="{i18n>Questions}"
+		  showNavButton="true"
+		  navButtonPress="onNavBack">
+		<content>
+			<!-- inserted by routing -->
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer />
+				<Button id="goBackToBaseDataBtn" text="{i18n>Back}" press="onNavBack" class="sapUiTinyMarginEnd" type="Emphasized" />
+				<Button id="goToResumeBtn" text="{i18n>Next}" press="onGoToResume" class="sapUiTinyMarginEnd" type="Emphasized" />
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

@@ -1,0 +1,15 @@
+{
+	"PeriodItems" : [ {
+		"pId" : "1",
+		"value" : "Q1"
+	}, {
+		"pId" : "2",
+		"value" : "Q2"
+	}, {
+		"pId" : "3",
+		"value" : "Q3"
+	}, {
+		"pId" : "4",
+		"value" : "Q4"
+	} ]
+}

@@ -1,0 +1,75 @@
+<mvc:View controllerName="LeF.controller.BaseData" 
+		  xmlns="sap.m" 
+		  xmlns:form="sap.ui.layout.form" 
+		  xmlns:l="sap.ui.layout"
+		  xmlns:core="sap.ui.core"
+		  xmlns:mvc="sap.ui.core.mvc">
+	<Page title="{i18n>BaseData}" showNavButton="true" navButtonPress="onNavBack" class="sapUiResponsivContentPadding">
+		<content>
+			<form:SimpleForm title="{i18n>Employee}" 
+							 editable="true" 
+							 layout="ResponsiveGridLayout" 
+							 columnsL="2" columnsM="2">
+				
+				<form:SimpleForm editable="true" 
+								 layout="ResponsiveLayout" 
+								 labelSpanL="2" labelSpanM="2">
+					<Label text="{i18n>FirstName}, {i18n>LastName}" labelFor="inputNameVorname"/>
+					<Input id="inputNameVorname" value="{/person/name} {/person/vorname}"/>
+					<Label text="{i18n>Department}" labelFor="inputBereich"/>
+					<Input id="inputBereich" value="{/person/bereich}"/>
+				</form:SimpleForm>
+				
+				<form:SimpleForm editable="true" 
+								 layout="ResponsiveLayout">
+					<Label text="{i18n>Period}" labelFor="periodeChois"/>
+					<Select id="periodeChois" forceSelection="false" selectedKey="{/PeriodItems/0/pId}" items="{path: '/PeriodItems', sorter: { path: 'value'}}">
+						<core:Item key="{pId}" text="{value}"/>
+					</Select>
+					<Label text="{i18n>Date}"/>
+					<DatePicker id="dpDate" value="{path: '/myDate', type:'sap.ui.model.type.Date' }" change="handleChange"/>
+				</form:SimpleForm>
+				
+			</form:SimpleForm>
+			
+			<form:SimpleForm editable="true" 
+							 layout="ResponsiveGridLayout" 
+							 columnsL="2" columnsM="2" 
+							 labelSpanL="2" labelSpanM="2">
+				<Label text="{i18n>Reason}"/>
+				<CheckBox text="{i18n>ReasonC1}" selected="true"/>
+				<CheckBox text="{i18n>ReasonC2}">
+					<layoutData>
+						<l:GridData linebreak="true" indentL="2" indentM="2"/>
+					</layoutData>
+				</CheckBox>
+				<CheckBox text="{i18n>ReasonC3}">
+					<layoutData>
+						<l:GridData linebreak="true" indentL="2" indentM="2"/>
+					</layoutData>
+				</CheckBox>
+				<Input id="anlassInput" width="60%"/>
+			</form:SimpleForm>
+			
+			<form:SimpleForm title="{i18n>Interviewing}" 
+							 editable="true" 
+							 layout="ResponsiveGridLayout" 
+							 columnsL="4" columnsM="4" 
+							 labelSpanL="2" labelSpanM="2" 
+							 emptySpanL="0" emptySpanM="0">
+				<Label id="lName" text="{i18n>FirstName}, {i18n>LastName}" labelFor="gName"/>
+				<Input id="gName" width="60%"/>
+				<Label text="{i18n>Position}" labelFor="funktionInput"/>
+				<Input id="funktionInput" width="60%"/>
+			</form:SimpleForm>
+			
+		</content>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button id="goBackToSearchBtn" text="{i18n>Back}" press="onNavBack" type="Emphasized"/>
+				<Button id="goToQuestionBtn" text="{i18n>Next}" press="onGoToQuestion" type="Emphasized"/>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

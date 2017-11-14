@@ -1,0 +1,23 @@
+<mvc:View controllerName="LeF.controller.qCatalog.Question"
+		  xmlns="sap.m"
+		  xmlns:form="sap.ui.layout.form"
+		  xmlns:mvc="sap.ui.core.mvc">
+	<VBox>
+		<Text text="{3/titel}" class="qTitle"/>
+		<Text text="{3/besch}" />
+		<Link text="{i18n>AppB}" tooltip="{i18n>AppB.tooltip}" class="sapUiTinyMarginTop" press="onGoToAppendixB" />
+		<form:SimpleForm editable="true" layout="ResponsiveGridLayout" columnsL="12" columnsM="12" labelSpanL="12" labelSpanM="12">
+			<Label text="{i18n>Q4_2}" labelFor="eval41" class="qTitle" />
+			<Input id="q41" />
+			<Label text="{i18n>Q4_3}" />
+			<TextArea id="q42" growing="true" width="100%"/>	
+		</form:SimpleForm>
+		<form:SimpleForm editable="true" layout="ResponsiveGridLayout" columnsL="12" columnsM="12" labelSpanL="12" labelSpanM="12">
+			<Text text="{i18n>Q4_4}" />
+			<Label text="{i18n>Q4_2}" labelFor="eval43" class="qTitle" />
+			<Input id="q43" />
+			<Label text="{i18n>Q4_3}" />
+			<TextArea id="q44" growing="true" width="100%"/>	
+		</form:SimpleForm>
+	</VBox>
+</mvc:View>

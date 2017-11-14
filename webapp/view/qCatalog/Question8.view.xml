@@ -1,0 +1,23 @@
+<mvc:View controllerName="LeF.controller.qCatalog.Question"
+		  xmlns="sap.m"
+		  xmlns:l="sap.ui.layout"
+		  xmlns:mvc="sap.ui.core.mvc">
+	<VBox>
+		<Text text="{7/titel}" class="qTitle"/>
+		<Text text="{7/besch}" />
+		<Text text="{i18n>Q8_1}" />
+		<VBox>
+			<CheckBox id="cbQ82" text="{i18n>Q8_2}" class="cbText" /> 
+			<l:VerticalLayout class="sapUiLargeMarginBegin" width="95%">
+				<CheckBox id="cbQ83" text="{i18n>Q8_3}" class="cbText" />
+				<TextArea id="q81" growing="true" width="100%"/>
+			</l:VerticalLayout>
+			<CheckBox id="cbQ84" text="{i18n>Q8_4}" class="cbText" />
+			<CheckBox id="cbQ85" text="{i18n>Q8_5}" class="cbText" />
+			<Label text="{i18n>Q8_6}" />
+			<TextArea id="q82" growing="true" width="100%"/>
+			<Link text="{i18n>AppB}" tooltip="{i18n>AppB.tooltip}" class="sapUiTinyMarginTop" press="onGoToAppendixB" />
+			<Link text="{i18n>AppC}" tooltip="{i18n>AppC.tooltip}" class="sapUiTinyMarginTop" press="onGoToAppendixC" />
+		</VBox>
+	</VBox>
+</mvc:View>

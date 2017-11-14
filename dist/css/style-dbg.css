@@ -1,0 +1,11 @@
+/* Enter your custom styles here */
+.qTitle {
+	font-weight: bold;
+	margin-top: 1em;
+}
+
+.cbText label {
+	white-space: normal;
+	line-height: normal;
+	vertical-align: middle;
+}
